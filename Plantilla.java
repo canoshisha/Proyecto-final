@@ -17,7 +17,7 @@ public class Plantilla {
         numAcomodador = 0;
     }
 
-    public void añadirLimpiadora(Limpiadora o) throws MiExcepcion {// añadimos limpiadoras siempre y cuando no sean iguales o no este completa la plantilla
+    public void anadirLimpiadora(Limpiadora o) throws MiExcepcion {// añadimos limpiadoras siempre y cuando no sean iguales o no este completa la plantilla
         int pos = Arrays.binarySearch(plantillaLimpiadoras, 0, numLimpiadora, o);
         if (pos >= 0) {//o esta en la tabla
             throw new MiExcepcion("La limpiadora ya está en la tabla");   //si hay una persona igual entonces sartaria este mensaje de error
@@ -31,7 +31,7 @@ public class Plantilla {
 
     }
 
-    public void añadirAcomodador(Acomodador o) throws MiExcepcion {// este metodo es similar al anterior pero ejecutandolo todo con la clase acomodador
+    public void anadirAcomodador(Acomodador o) throws MiExcepcion {// este metodo es similar al anterior pero ejecutandolo todo con la clase acomodador
         int pos = Arrays.binarySearch(plantillaAcomodador, 0, numAcomodador, o);
         if (pos >= 0) {//o esta en la tabla
             throw new MiExcepcion("La limpiadora ya está en la tabla");

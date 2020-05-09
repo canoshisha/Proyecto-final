@@ -200,7 +200,7 @@ public class Acomodador implements ITrabajador,Comparable {
             throw new MiExcepcion();
         }
     }
-    public void acompañarAsistente(){
+    public void acompanarAsistente(){
         System.out.println("El acomodador" + nombre + "esta acompañando a un asistente a su asiento");
         
     }

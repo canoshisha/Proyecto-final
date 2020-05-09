@@ -67,27 +67,27 @@ public class EPDEvaluable {
         Limpiadora limpiadora5 = new Limpiadora(2, 20.5,48563,"Carla","Herrera Martinez",25,"materita@gmail.com","345678-v","Malaga",Entrada,12,10);
         
         try{
-        plant.añadirLimpiadora(limpiadora1);// añadimos una limpiadora a la tabla de plantilla de limpiadoras
-        plant.añadirLimpiadora(limpiadora2);// si introdujiese una limpiadora exactamente igual saltaria una excepcion, o si metemos mas de las totales
+        plant.anadirLimpiadora(limpiadora1);// añadimos una limpiadora a la tabla de plantilla de limpiadoras
+        plant.anadirLimpiadora(limpiadora2);// si introdujiese una limpiadora exactamente igual saltaria una excepcion, o si metemos mas de las totales
         plant.imprimeLimpiadora();// imprimo la tabla en orden natural
-        plant.añadirLimpiadora(limpiadora3);// añado el objeto a la tabla de plant
-        plant.añadirLimpiadora(limpiadora4);
-        plant.añadirLimpiadora(limpiadora5);
+        plant.anadirLimpiadora(limpiadora3);// añado el objeto a la tabla de plant
+        plant.anadirLimpiadora(limpiadora4);
+        plant.anadirLimpiadora(limpiadora5);
         plant.imprimeLimpiadora();
         plant.ordenarLimpiadorasCompare();// modifico el orden al orden realizado en la clase compare
         plant.imprimeLimpiadora();//imprimo la tabla
         
         Acomodador acomodador1 = new Acomodador(2, 20.5,48563,"Juan","Hernandez Lopez",35,"materita@gmail.com","345678-s","Malaga",Entrada,16,10,5);
-        acomodador1.acompañarAsistente();
+        acomodador1.acompanarAsistente();
         acomodador1.preguntarVIP();// pregunto a los asistente vip si quieren bebidas
         acomodador1.repatirRegalo();// reparte regalos
         acomodador1.obtenerRegalos();// obtiene regalos siempre y cuando sean menos de 12 sino saltaria una excepcion
         acomodador1.repatirRegalo();
-        plant.añadirAcomodador(acomodador1);
+        plant.anadirAcomodador(acomodador1);
         Acomodador acomodador2 = new Acomodador(2, 20.5,48563,"Sara","Martinez Gutierrez",33,"materita@gmail.com","345678-s","Malaga",Entrada,16,10,5);
         Acomodador acomodador3 = new Acomodador(2, 20.5,48563,"Esteban","Lopez Villanew",35,"materita@gmail.com","345678-s","Malaga",Entrada,16,10,5);
-        plant.añadirAcomodador(acomodador2);
-        plant.añadirAcomodador(acomodador3);
+        plant.anadirAcomodador(acomodador2);
+        plant.anadirAcomodador(acomodador3);
         plant.imprimeAcomodador();
         }catch(MiExcepcion ex){
             System.err.println("Excepcion capturada");
